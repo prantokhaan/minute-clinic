@@ -6,6 +6,8 @@ import './Doctor.css'
 
 const Doctor = ({doctor}) => {
     const {name, photo, qualification, specialist, fee, rating, totalRated, micid} = doctor;
+
+
     return (
       <div className="col-md-4">
         <div className="row p-3 ms-1 mb-1 doctor">
@@ -13,6 +15,8 @@ const Doctor = ({doctor}) => {
             <img src={photo} alt="" />
           </div>
           <div className="col-md-8 col-sm-12 doctor-info mt-2">
+
+            {/* Doctor Info  */}
             <h5>{name}</h5>
             <p className="color-2 mt-3">
               {specialist} ({qualification})

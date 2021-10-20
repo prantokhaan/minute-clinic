@@ -3,6 +3,8 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Register = () => {
+
+  // import from auth 
   
   const {
     user,
@@ -17,10 +19,12 @@ const Register = () => {
     handleNameChange,
   } = useAuth();
 
+  // for Redirect 
   const location = useLocation();
   const history = useHistory();
   const redirect_url = location.state?.from || "/home";
 
+  // Google Register 
   const handleGoogleRegister = (e) => {
     e.preventDefault();
     signInUsingGoogle()
@@ -40,12 +44,14 @@ const Register = () => {
             <h4 className="color-2 mb-4">Create your Account, It's Free!!</h4>
             {/* Email Form  */}
             <form onSubmit={handleRegistration}>
+              {/* Name Form  */}
               <input
                 onBlur={handleNameChange}
                 type="text"
                 className="form-control w-50 text-center mx-auto mb-4 box-shadow"
                 placeholder="Your Name"
               />
+              {/* Email Form  */}
               <input
                 onBlur={handleEmailChange}
                 type="email"
@@ -77,12 +83,12 @@ const Register = () => {
               <br />
 
               {/* Google Sign In  */}
-                <button
-                  onClick={handleGoogleRegister}
-                  className="secondary-button transition box-shadow"
-                >
-                  <i class="fab fa-google"> </i> Login
-                </button>
+              <button
+                onClick={handleGoogleRegister}
+                className="secondary-button transition box-shadow"
+              >
+                <i class="fab fa-google"> </i> Login
+              </button>
             </form>
           </div>
           <div className="mb-3"></div>

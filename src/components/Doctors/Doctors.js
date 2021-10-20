@@ -10,6 +10,8 @@ const Doctors = () => {
     return (
       <div className="overflow-hidden">
         <h2 className="section-title color-1">Pick your Doctor From here!</h2>
+
+        {/* Data Load to the Component  */}
         <div className="row gy-2">
             {doctors.map((doctor) => (
               <Doctor key={doctor.micid} doctor={doctor}></Doctor>

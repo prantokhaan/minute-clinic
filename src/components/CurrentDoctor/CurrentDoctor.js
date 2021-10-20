@@ -9,6 +9,7 @@ const CurrentDoctor = ({currentDoctor}) => {
       <div className="mt-4 text-center overflow-hidden bg-1">
         <h3 className="mb-5">Doctor's Profile</h3>
         <div className="info row ms-4 ps-4">
+          {/* Doctor Image  */}
           <div className="col-md-3 ms-5">
             <img
               src={photo}
@@ -18,6 +19,7 @@ const CurrentDoctor = ({currentDoctor}) => {
               className="rounded-pill"
             />
           </div>
+          {/* Doctor Status  */}
           <div className="col-md-3">
             <h5 className="color-1">{name}</h5>
             <p>{qualification}</p>
@@ -26,6 +28,8 @@ const CurrentDoctor = ({currentDoctor}) => {
               Total Expierience: <b>{experience}+</b> Years
             </p>
           </div>
+
+          {/* Rating  */}
           <div className="col-md-3">
             <p>
               Total Rated: <b className="color-1">{totalRated}</b>
@@ -38,6 +42,8 @@ const CurrentDoctor = ({currentDoctor}) => {
               readonly
             />
           </div>
+
+          {/* Fee + Button  */}
           <div className="text-center mx-auto my-3 p-3 rounded-1 border border-danger border-2 w-50">
             <h6>Colsultation Fee</h6>
             <h4>${fee} + 5% VAT</h4>
@@ -49,6 +55,8 @@ const CurrentDoctor = ({currentDoctor}) => {
           </div>
         </div>
         <hr />
+        
+        {/* Follo Up Fee & Avaibility  */}
         <div className="row">
           <div className="text-center mx-auto border border-2 border-black w-25 px-3 py-2">
             <h6>Follow Up Fee</h6>

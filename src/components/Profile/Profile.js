@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Profile = () => {
+
+  // Email, Phone Number 
   const { user } = useAuth();
   console.log(user);
   let verified = "unverified";
@@ -24,6 +26,7 @@ const Profile = () => {
   return (
     <div>
       <div>
+        {/* Title and Photo  of User  */}
         <h2 className="text-center my-3 py-2">
           Welcome{" "}
           <span className="color-2 text-capitalize">{user.displayName}</span>
@@ -37,6 +40,8 @@ const Profile = () => {
             height="100px"
           />
         </div>
+
+        {/* Status  */}
         <div className="row text-center">
           <div className="static col-6">
             <h6>User ID :</h6>
@@ -48,6 +53,8 @@ const Profile = () => {
             <h6>Phone Number :</h6>
             <hr />
           </div>
+
+          {/* Status Value  */}
           <div className="info col-6">
             <h6>{user?.uid}</h6>
             <hr />

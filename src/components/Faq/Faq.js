@@ -6,6 +6,8 @@ const Faq = () => {
         <h2 className="section-title">
           Have Any <span className="color-1">Question ?</span>
         </h2>
+
+        {/* Bootstrap Accordion  */}
         <div className="accordion" id="accordionPanelsStayOpenExample">
           <div className="accordion-item">
             <h2 className="accordion-header" id="panelsStayOpen-headingOne">

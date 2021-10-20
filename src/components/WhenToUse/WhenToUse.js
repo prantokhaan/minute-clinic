@@ -4,6 +4,7 @@ import painImg from '../../images/head_pain.png';
 
 const WhenToUse = () => {
     return (
+      // Title 
       <div className="container py-3 bg-light box-shadow">
         <h2 className="section-title">
           When to Use <span className="color-1">Minute Clinic</span>
@@ -13,6 +14,8 @@ const WhenToUse = () => {
             <img src={painImg} alt="" />
           </div>
           <div className="mt-5">
+
+            {/* When childs  */}
             <div className="when-items">
               <h4>Common health issue</h4>
               <p>

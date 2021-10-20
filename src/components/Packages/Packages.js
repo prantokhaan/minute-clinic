@@ -7,6 +7,8 @@ const Packages = () => {
         <h2 className="section-title">
           You can purchase any of our <span className="color-1">plan</span>.
         </h2>
+
+        {/* Some Packages  */}
         <div className="row package-item w-75 mx-auto mt-5">
           <div className="col-md-4 mt-5 pt-4">
             <h2 className="color-2">Standard</h2>

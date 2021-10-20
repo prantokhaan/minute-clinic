@@ -14,6 +14,8 @@ const Steps = () => {
               <div className="step-icon me-3">
                 <i className="fas fa-search"></i>
               </div>
+
+              {/* Step One  */}
               <div className="step-info">
                 <h4>Search your Doctor!</h4>
                 <p>
@@ -27,6 +29,8 @@ const Steps = () => {
               <div className="step-icon me-3">
                 <i className="fas fa-phone-square-alt"></i>
               </div>
+
+              {/* Step Two  */}
               <div className="step-info">
                 <h4>Consult live on VideoCall</h4>
                 <p>
@@ -40,6 +44,8 @@ const Steps = () => {
               <div className="step-icon me-3">
                 <i className="fas fa-paste"></i>
               </div>
+
+              {/* Step Three  */}
               <div className="step-info">
                 <h4>Instant Prescription</h4>
                 <p>

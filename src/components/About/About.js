@@ -6,17 +6,19 @@ const About = () => {
     return (
       <div>
         <div className="my-3 container text-center">
+          {/* About Section  */}
           <div className="section-title text-center mb-3">
             <h2>
               About <span className="color-1">Us</span>
             </h2>
           </div>
           <div>
+            {/* About Image  */}
             <div className="about-img ms-2">
               <img src={aboutImg} alt="" width="500px" />
             </div>
             <br />
-            {/* Info of Aimers  */}
+            {/* Info of Minute Clinic  */}
             <div className="mt-5 ms-5 p-2">
               <h6 className="mt-4 lh-lg color-4">
                 minute clinic is an online medical service targeting emerging markets

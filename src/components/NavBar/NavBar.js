@@ -8,7 +8,7 @@ const NavBar = () => {
   const {user,  signOut, setUser, setError, logOut} = useAuth();
 
 
-
+  // NavBar Style 
   const navLinkStyle = {
     textDecoration: "none",
     color: "black",
@@ -23,6 +23,8 @@ const NavBar = () => {
           <div className="d-flex container-fluid">
             <div className="ms-5 text-uppercase d-flex">
               <i className="fas fa-clinic-medical  ms-5 ps-5 pe-2"></i>
+
+              {/* Logo  */}
               <h3 className="logo color-2">Minute Clinic</h3>
             </div>
             {/* Navigation Child  */}
@@ -42,6 +44,8 @@ const NavBar = () => {
               <NavLink style={navLinkStyle} to="/contact">
                 Contact Us
               </NavLink>
+
+              {/* Conditional Button  */}
               <div className="mt-2 conditional-button">
                 {user.email || user.displayName ? (
                   <div className="d-flex">

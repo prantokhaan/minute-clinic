@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import useDoctors from '../../Hooks/useDoctors';
-import Appointment from '../Appointment/Appointment';
 import CurrentDoctor from '../CurrentDoctor/CurrentDoctor';
 
 const DoctorDetail = () => {
