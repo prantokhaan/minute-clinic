@@ -32,7 +32,7 @@ const useFirebase = () => {
 
       
   };
-
+  //  Handle Input 
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
@@ -43,7 +43,7 @@ const useFirebase = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-
+  // Registration by Email 
   const handleRegistration = (e) => {
     e.preventDefault();
     console.log(email, password);
@@ -63,6 +63,8 @@ const useFirebase = () => {
     }
     
   };
+
+  // Login by Email 
   const handleLogin = () => {
     if (email && password) {
       processLogin(email, password);
@@ -74,7 +76,7 @@ const useFirebase = () => {
       
       
   };
-
+  // New User Create 
   const registerNewUser = (email, password) => {
     setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
@@ -89,6 +91,8 @@ const useFirebase = () => {
       })
       .finally(() => setIsLoading(false));
   };
+
+  // Set UserName 
   const setUserName = () => {
     updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
   };
@@ -105,7 +109,8 @@ const useFirebase = () => {
     });
     return () => unsubscribed;
   }, [auth]);
-
+   
+  // Logout 
   const logOut = () => {
     signOut(auth)
       .then(() => {
